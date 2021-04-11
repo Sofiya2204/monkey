@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="math.htmml">
+	<link rel="stylesheet" href="index.htmml">
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+	<div class="blok1 ">
+		<div class="logo">
+			<img src="logo.png" class="img2">
+		</div>
+		<div class="menu">
+			<div class="chapter">
+				<img src="home.png" class="img3">
+				<div class="divhome">
+					<link><a class="txthome" href="index.html#home">Home</a>
+				</div>
+			</div>
+			<div class="about">
+				<img src="ed.png" class="img4">
+				<div class="dived">
+					<a class="txted" href="index.html#ed">School</a>
+				</div>
+			</div>
+			<div class="entrance">
+				<img src="login.png" class="img6">
+				<div class="divlogin">
+					<a class="txtlogin" href="">log in</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="boxtest">
+		<div class="divtest">
+			<div class="question1">
+				<h1 class="txtquestion1">
+					Select the whole part from the improper fraction 17/5
+				</h1>
+				<div class="net1">
+					<p class="txtotvet1">2 7/5</p>
+				</div>
+				<div class="net2">
+					<p class="txtotvet1">2 3/5</p>
+				</div>
+				<div class="da1">
+					<p class="txtotvet1">3 2/17</p>
+				</div>
+				<div class="net3">
+					<p class="txtotvet1">3 2/5</p>
+				</div>
+			</div>
+			<div class="question2">
+				<h1 class="txtquestion2">
+					Calculate 403 * 508
+				</h1>		
+				<div class="neto">
+					<p class="txtotvet2">203724</p>
+				</div>
+				<div class="neto">
+					<p class="txtotvet2">23374</p>
+				</div>
+				<div class="da2">
+					<p class="txtotvet2">204724</p>
+				</div>
+				<div class="neto">
+					<p class="txtotvet2">21844</p>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript">
+		let da1 = document.querySelector(".da1");
+		let net1 = document.querySelector(".net1");
+		let net2 = document.querySelector(".net2");
+		let net3 = document.querySelector(".net3");
+		let da2 = document.querySelector(".da2");
+		let neto = document.querySelector(".neto");
+		let question2 = document.querySelector(".question2");
+		let question1 = document.querySelector(".question1");
+		let ball = 0
+		da1.onclick = function(){
+			question1.style.display = "none";
+			question2.style.display = "block";
+		}
+		net1.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "block";
+		}
+	</script>
+</body>
+</html>
