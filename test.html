@@ -47,26 +47,26 @@
 					<p class="txtotvet1">2 3/5</p>
 				</div>
 				<div class="da1">
-					<p class="txtotvet1">3 2/17</p>
+					<p class="txtotvet1">3 2/5</p>
 				</div>
 				<div class="net3">
-					<p class="txtotvet1">3 2/5</p>
+					<p class="txtotvet1">3 2/17</p>
 				</div>
 			</div>
 			<div class="question2">
 				<h1 class="txtquestion2">
 					Calculate 403 * 508
 				</h1>		
-				<div class="neto">
+				<div class="neto1">
 					<p class="txtotvet2">203724</p>
 				</div>
-				<div class="neto">
+				<div class="neto2">
 					<p class="txtotvet2">23374</p>
 				</div>
 				<div class="da2">
 					<p class="txtotvet2">204724</p>
 				</div>
-				<div class="neto">
+				<div class="neto3">
 					<p class="txtotvet2">21844</p>
 				</div>
 			</div>
@@ -76,11 +76,13 @@
 		let net1 = document.querySelector(".net1");
 		let net2 = document.querySelector(".net2");
 		let net3 = document.querySelector(".net3");
+		let neto1 = document.querySelector(".neto1");
+		let neto2 = document.querySelector(".neto2");
+		let neto3 = document.querySelector(".neto3");
 		let da2 = document.querySelector(".da2");
-		let neto = document.querySelector(".neto");
 		let question2 = document.querySelector(".question2");
 		let question1 = document.querySelector(".question1");
-		let ball = 0
+		let ball = 5
 		da1.onclick = function(){
 			question1.style.display = "none";
 			question2.style.display = "block";
@@ -89,6 +91,67 @@
 			ball = ball - 1;
 			question1.style.display = "none";
 			question2.style.display = "block";
+		}
+		net2.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "block";
+		}
+		net3.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "block";
+		}
+		da2.onclick = function(){
+			question1.style.display = "none";
+			question2.style.display = "none";
+			if (ball == 5) {
+				alert("вы отлично усвоили пнрограмму 5 класса");
+			}
+			if (ball == 4) {
+					alert("вам следует повторить тему Roman numbering");
+					location2.style.display = "none";
+					location1.style.display = "block";
+			}
+		}
+		neto1.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "none";
+			if (ball == 3) {
+				alert("вы не усвоили пнрограмму 5 класса");
+			}
+			if (ball == 4) {
+					alert("вам следует повторить тему Calculations");
+					location2.style.display = "none";
+					location1.style.display = "block";
+			}
+		}
+		neto2.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "none";
+			if (ball == 3) {
+				alert("вы не усвоили пнрограмму 5 класса");
+			}
+			if (ball == 4) {
+					alert("вам следует повторить тему Calculations");
+					location2.style.display = "none";
+					location1.style.display = "block";
+			}
+		}
+		neto3.onclick = function(){
+			ball = ball - 1;
+			question1.style.display = "none";
+			question2.style.display = "none";
+			if (ball == 3) {
+				alert("вы не усвоили пнрограмму 5 класса");
+			}
+			if (ball == 4) {
+					alert("вам следует повторить тему Calculations");
+					location2.style.display = "none";
+					location1.style.display = "block";
+			}
 		}
 	</script>
 </body>
